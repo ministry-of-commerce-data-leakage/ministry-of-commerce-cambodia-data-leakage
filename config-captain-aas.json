@@ -1,0 +1,120 @@
+{
+	"namespace": "captain",
+	"customDomain": "aas-image.moc.gov.kh",
+	"emailAddress": "it.support@moc.gov.kh",
+	"hasRootSsl": true,
+	"forceRootSsl": true,
+	"hashedPassword": "$2a$10$I7djoD6r9HF49N7SGWi1QO5wD1uMpXXqoEjWMDYE6E1zyInoaV49m",
+	"appDefinitions": {
+		"s3": {
+			"hasPersistentData": true,
+			"description": "",
+			"instanceCount": 1,
+			"captainDefinitionRelativeFilePath": "./captain-definition",
+			"networks": [
+				"captain-overlay-network"
+			],
+			"envVars": [
+				{
+					"key": "PROTOCOL",
+					"value": "https"
+				}
+			],
+			"volumes": [
+				{
+					"containerPath": "/app/upload",
+					"hostPath": "/"
+				}
+			],
+			"ports": [],
+			"versions": [
+				{
+					"version": 0,
+					"timeStamp": "2023-02-20T02:25:00.473Z",
+					"deployedImageName": "img-captain-s3:0",
+					"gitHash": ""
+				},
+				{
+					"version": 1,
+					"timeStamp": "2023-02-20T02:27:10.881Z"
+				},
+				{
+					"version": 2,
+					"timeStamp": "2023-02-20T02:29:56.461Z"
+				},
+				{
+					"version": 3,
+					"timeStamp": "2023-02-20T02:36:01.255Z",
+					"deployedImageName": "img-captain-s3:3",
+					"gitHash": "1f7ba60101a9b590d67142af4b980b675ab77391\n"
+				},
+				{
+					"version": 4,
+					"timeStamp": "2023-06-27T09:46:47.135Z",
+					"deployedImageName": "img-captain-s3:4",
+					"gitHash": "1f7ba60101a9b590d67142af4b980b675ab77391\n"
+				},
+				{
+					"version": 5,
+					"timeStamp": "2023-06-27T09:51:59.921Z",
+					"deployedImageName": "img-captain-s3:5",
+					"gitHash": "1f7ba60101a9b590d67142af4b980b675ab77391\n"
+				},
+				{
+					"version": 6,
+					"timeStamp": "2023-06-27T10:03:47.943Z",
+					"deployedImageName": "img-captain-s3:6",
+					"gitHash": "1f7ba60101a9b590d67142af4b980b675ab77391\n"
+				},
+				{
+					"version": 7,
+					"timeStamp": "2023-07-05T03:51:46.403Z",
+					"deployedImageName": "img-captain-s3:7",
+					"gitHash": "1f7ba60101a9b590d67142af4b980b675ab77391\n"
+				},
+				{
+					"version": 8,
+					"timeStamp": "2024-04-22T09:59:05.240Z",
+					"deployedImageName": "img-captain-s3:8",
+					"gitHash": "5693b8886d707ba415332ce1325258c76d9a7cca\n"
+				},
+				{
+					"version": 9,
+					"timeStamp": "2024-05-09T12:53:57.510Z",
+					"deployedImageName": "img-captain-s3:9",
+					"gitHash": "5693b8886d707ba415332ce1325258c76d9a7cca\n"
+				}
+			],
+			"deployedVersion": 9,
+			"notExposeAsWebApp": false,
+			"customDomain": [
+				{
+					"publicDomain": "s3.moc.gov.kh",
+					"hasSsl": true
+				}
+			],
+			"hasDefaultSubDomainSsl": false,
+			"forceSsl": true,
+			"websocketSupport": false,
+			"appPushWebhook": {
+				"tokenVersion": "eeb43030-85c3-4394-a8a3-9dac76759135",
+				"pushWebhookToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InRva2VuVmVyc2lvbiI6ImVlYjQzMDMwLTg1YzMtNDM5NC1hOGEzLTlkYWM3Njc1OTEzNSIsImFwcE5hbWUiOiJzMyIsIm5hbWVzcGFjZSI6ImNhcHRhaW4ifSwiaWF0IjoxNjc2ODU5OTQ5fQ.Jea0wCYu4VIaFZFCFQ2wOQoBxhCFj0y1zGFm-y59x08",
+				"repoInfo": {
+					"repo": "http://git.moc.gov.kh/sambath.udomreachea/file-storage.git",
+					"user": "sambath.udomreachea",
+					"password": "",
+					"sshKey": "",
+					"branch": "develop",
+					"passwordEncrypted": "7fb1656cd16c2fa973066073d3fdeef0:a2c40a81ec379faf29731346586202ba2e77906ae2576f7c2abd"
+				}
+			},
+			"containerHttpPort": 8000,
+			"nodeId": "wupnw0j31fb8jymwlxqkmzid7",
+			"preDeployFunction": "",
+			"serviceUpdateOverride": "",
+			"appDeployTokenConfig": {
+				"enabled": false
+			}
+		}
+	}
+}

@@ -1,0 +1,542 @@
+{
+	"namespace": "captain",
+	"customDomain": "space.moc.gov.kh",
+	"appDefinitions": {
+		"s1": {
+			"hasPersistentData": true,
+			"description": "",
+			"instanceCount": 1,
+			"captainDefinitionRelativeFilePath": "./captain-definition",
+			"networks": [
+				"captain-overlay-network"
+			],
+			"envVars": [
+				{
+					"key": "PORT",
+					"value": "3000"
+				},
+				{
+					"key": "URL",
+					"value": "https://s1.moc.gov.kh"
+				}
+			],
+			"volumes": [
+				{
+					"containerPath": "/app/upload",
+					"hostPath": "/upload"
+				}
+			],
+			"ports": [],
+			"versions": [
+				{
+					"version": 0,
+					"timeStamp": "2021-09-28T03:50:26.696Z",
+					"deployedImageName": "img-captain-s2:0",
+					"gitHash": ""
+				},
+				{
+					"version": 1,
+					"timeStamp": "2021-09-28T03:53:08.991Z",
+					"deployedImageName": "img-captain-s2:1",
+					"gitHash": "1337319618bf0a70924b6300c49540348b0d0a02\n"
+				},
+				{
+					"version": 2,
+					"timeStamp": "2021-09-28T04:13:06.043Z",
+					"deployedImageName": "img-captain-s2:2",
+					"gitHash": "1337319618bf0a70924b6300c49540348b0d0a02\n"
+				},
+				{
+					"version": 3,
+					"timeStamp": "2021-09-28T04:21:08.307Z",
+					"deployedImageName": "img-captain-s1:3",
+					"gitHash": "1337319618bf0a70924b6300c49540348b0d0a02\n"
+				},
+				{
+					"version": 4,
+					"timeStamp": "2021-09-28T04:24:52.253Z",
+					"deployedImageName": "img-captain-s1:4",
+					"gitHash": "1337319618bf0a70924b6300c49540348b0d0a02\n"
+				},
+				{
+					"version": 5,
+					"timeStamp": "2021-09-28T04:30:36.997Z",
+					"deployedImageName": "img-captain-s1:5",
+					"gitHash": "1337319618bf0a70924b6300c49540348b0d0a02\n"
+				},
+				{
+					"version": 6,
+					"timeStamp": "2021-09-28T04:32:51.045Z",
+					"deployedImageName": "img-captain-s1:6",
+					"gitHash": "1337319618bf0a70924b6300c49540348b0d0a02\n"
+				},
+				{
+					"version": 7,
+					"timeStamp": "2021-09-28T04:39:57.003Z",
+					"deployedImageName": "img-captain-s1:7",
+					"gitHash": "1337319618bf0a70924b6300c49540348b0d0a02\n"
+				},
+				{
+					"version": 8,
+					"timeStamp": "2021-09-28T04:45:25.667Z",
+					"deployedImageName": "img-captain-s1:8",
+					"gitHash": "1337319618bf0a70924b6300c49540348b0d0a02\n"
+				},
+				{
+					"version": 9,
+					"timeStamp": "2021-10-01T03:18:31.621Z"
+				},
+				{
+					"version": 10,
+					"timeStamp": "2021-10-01T03:20:18.215Z",
+					"deployedImageName": "img-captain-s1:10",
+					"gitHash": "1337319618bf0a70924b6300c49540348b0d0a02\n"
+				},
+				{
+					"version": 11,
+					"timeStamp": "2021-10-01T03:28:18.050Z",
+					"deployedImageName": "img-captain-s1:11",
+					"gitHash": "1337319618bf0a70924b6300c49540348b0d0a02\n"
+				},
+				{
+					"version": 12,
+					"timeStamp": "2021-10-01T08:36:43.829Z",
+					"deployedImageName": "img-captain-s1:12",
+					"gitHash": "1337319618bf0a70924b6300c49540348b0d0a02\n"
+				},
+				{
+					"version": 13,
+					"timeStamp": "2022-01-21T14:51:43.137Z"
+				},
+				{
+					"version": 14,
+					"timeStamp": "2022-01-21T14:56:44.303Z"
+				},
+				{
+					"version": 15,
+					"timeStamp": "2022-01-21T14:57:58.008Z"
+				},
+				{
+					"version": 16,
+					"timeStamp": "2022-01-21T15:01:37.877Z"
+				},
+				{
+					"version": 17,
+					"timeStamp": "2022-01-24T05:19:21.512Z"
+				},
+				{
+					"version": 18,
+					"timeStamp": "2022-01-24T07:10:50.969Z"
+				},
+				{
+					"version": 19,
+					"timeStamp": "2022-01-25T03:25:26.853Z",
+					"deployedImageName": "img-captain-s1:19",
+					"gitHash": "1337319618bf0a70924b6300c49540348b0d0a02\n"
+				},
+				{
+					"version": 20,
+					"timeStamp": "2022-02-12T07:20:55.061Z"
+				},
+				{
+					"version": 21,
+					"timeStamp": "2022-02-12T07:22:33.263Z"
+				},
+				{
+					"version": 22,
+					"timeStamp": "2022-02-12T07:31:40.889Z",
+					"deployedImageName": "img-captain-s1:22",
+					"gitHash": "1337319618bf0a70924b6300c49540348b0d0a02\n"
+				},
+				{
+					"version": 23,
+					"timeStamp": "2022-02-16T11:07:16.694Z"
+				},
+				{
+					"version": 24,
+					"timeStamp": "2022-02-16T11:12:23.250Z",
+					"deployedImageName": "img-captain-s1:24",
+					"gitHash": "1337319618bf0a70924b6300c49540348b0d0a02\n"
+				},
+				{
+					"version": 25,
+					"timeStamp": "2022-12-07T12:01:09.406Z"
+				},
+				{
+					"version": 26,
+					"timeStamp": "2022-12-07T12:11:09.928Z"
+				},
+				{
+					"version": 27,
+					"timeStamp": "2022-12-14T07:07:15.868Z"
+				},
+				{
+					"version": 28,
+					"timeStamp": "2022-12-14T07:09:14.678Z"
+				},
+				{
+					"version": 29,
+					"timeStamp": "2022-12-14T07:17:27.295Z",
+					"deployedImageName": "img-captain-s1:29",
+					"gitHash": "1337319618bf0a70924b6300c49540348b0d0a02\n"
+				},
+				{
+					"version": 30,
+					"timeStamp": "2022-12-14T07:25:30.621Z",
+					"deployedImageName": "img-captain-s1:30",
+					"gitHash": "1337319618bf0a70924b6300c49540348b0d0a02\n"
+				},
+				{
+					"version": 31,
+					"timeStamp": "2022-12-14T07:37:03.146Z",
+					"deployedImageName": "img-captain-s1:31",
+					"gitHash": "1337319618bf0a70924b6300c49540348b0d0a02\n"
+				}
+			],
+			"deployedVersion": 31,
+			"notExposeAsWebApp": false,
+			"customDomain": [
+				{
+					"publicDomain": "s1.moc.gov.kh",
+					"hasSsl": true
+				}
+			],
+			"hasDefaultSubDomainSsl": false,
+			"forceSsl": true,
+			"websocketSupport": false,
+			"appPushWebhook": {
+				"tokenVersion": "cc5a78d1-df19-463d-b012-c28bbd493321",
+				"pushWebhookToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InRva2VuVmVyc2lvbiI6ImNjNWE3OGQxLWRmMTktNDYzZC1iMDEyLWMyOGJiZDQ5MzMyMSIsImFwcE5hbWUiOiJzMSIsIm5hbWVzcGFjZSI6ImNhcHRhaW4ifSwiaWF0IjoxNjMyODAyNTc3fQ.dRwne4lODnkFxqbJdB-_9ubnvW5xZUOdUmF7gPHf8-4",
+				"repoInfo": {
+					"repo": "https://github.com/mocdevs/upload-space-moc",
+					"user": "mocdevs",
+					"password": "",
+					"sshKey": "",
+					"branch": "master",
+					"passwordEncrypted": "1eebe1da1e6b635d7e987f87238a9de3:136eae81948a1f584111be479f76c59affcb31b9e627b04fc8157209e903bdea7fd099377955caad"
+				}
+			},
+			"containerHttpPort": 3000,
+			"nodeId": "thg994nl8g7y270kcsfnx0s2n",
+			"preDeployFunction": "",
+			"serviceUpdateOverride": "",
+			"appDeployTokenConfig": {
+				"enabled": false
+			}
+		},
+		"maintenance": {
+			"hasPersistentData": false,
+			"description": "",
+			"instanceCount": 1,
+			"captainDefinitionRelativeFilePath": "./captain-definition",
+			"networks": [
+				"captain-overlay-network"
+			],
+			"envVars": [],
+			"volumes": [],
+			"ports": [],
+			"versions": [
+				{
+					"version": 0,
+					"timeStamp": "2021-11-22T05:25:37.441Z",
+					"deployedImageName": "img-captain-maintenance:0",
+					"gitHash": ""
+				}
+			],
+			"deployedVersion": 0,
+			"notExposeAsWebApp": false,
+			"customDomain": [
+				{
+					"publicDomain": "maintenance.moc.gov.kh",
+					"hasSsl": false
+				}
+			],
+			"hasDefaultSubDomainSsl": false,
+			"forceSsl": false,
+			"websocketSupport": false,
+			"containerHttpPort": 3000,
+			"preDeployFunction": "",
+			"serviceUpdateOverride": "",
+			"appDeployTokenConfig": {
+				"enabled": false
+			}
+		},
+		"s2": {
+			"hasPersistentData": true,
+			"description": "",
+			"instanceCount": 1,
+			"captainDefinitionRelativeFilePath": "./captain-definition",
+			"networks": [
+				"captain-overlay-network"
+			],
+			"envVars": [
+				{
+					"key": "ENVIRONMENT",
+					"value": "production"
+				}
+			],
+			"volumes": [
+				{
+					"containerPath": "/app/upload",
+					"hostPath": "/upload"
+				}
+			],
+			"ports": [],
+			"versions": [
+				{
+					"version": 0,
+					"timeStamp": "2022-02-16T08:46:38.807Z",
+					"deployedImageName": "img-captain-s2:0",
+					"gitHash": ""
+				},
+				{
+					"version": 1,
+					"timeStamp": "2022-02-16T08:49:37.691Z"
+				},
+				{
+					"version": 2,
+					"timeStamp": "2022-02-16T08:51:11.988Z"
+				},
+				{
+					"version": 3,
+					"timeStamp": "2022-02-16T08:59:44.528Z"
+				},
+				{
+					"version": 4,
+					"timeStamp": "2022-02-16T09:11:23.249Z"
+				},
+				{
+					"version": 5,
+					"timeStamp": "2022-02-16T09:16:18.099Z"
+				},
+				{
+					"version": 6,
+					"timeStamp": "2022-02-16T09:21:25.327Z"
+				},
+				{
+					"version": 7,
+					"timeStamp": "2022-02-16T11:05:23.392Z"
+				},
+				{
+					"version": 8,
+					"timeStamp": "2022-02-16T11:11:02.919Z"
+				},
+				{
+					"version": 9,
+					"timeStamp": "2022-02-16T11:12:52.930Z"
+				},
+				{
+					"version": 10,
+					"timeStamp": "2022-02-16T11:32:39.521Z",
+					"deployedImageName": "img-captain-s2:10",
+					"gitHash": "cca17b7a3644ce959a96a449bf08ac0e2e2119fb\n"
+				},
+				{
+					"version": 11,
+					"timeStamp": "2022-02-17T09:35:33.561Z",
+					"deployedImageName": "img-captain-s2:11",
+					"gitHash": "945b637a0b645a62b00f8f66bd16b09b1fb91247\n"
+				},
+				{
+					"version": 12,
+					"timeStamp": "2022-02-28T12:56:08.800Z",
+					"deployedImageName": "img-captain-s2:12",
+					"gitHash": "cfece2da7993f96d5251a951e6780626503a140a\n"
+				},
+				{
+					"version": 13,
+					"timeStamp": "2022-03-02T08:12:24.285Z",
+					"deployedImageName": "img-captain-s2:13",
+					"gitHash": "45c9ff94fbe78ac5ec02154572c3732ae6c35856\n"
+				},
+				{
+					"version": 14,
+					"timeStamp": "2022-03-02T08:25:02.094Z",
+					"deployedImageName": "img-captain-s2:14",
+					"gitHash": "9a87d1fd8d59518712619a14208d846ffbfa0745\n"
+				},
+				{
+					"version": 15,
+					"timeStamp": "2022-03-04T00:52:28.664Z",
+					"deployedImageName": "img-captain-s2:15",
+					"gitHash": "644b893b9805545072ed5428f39451093206bdcd\n"
+				},
+				{
+					"version": 16,
+					"timeStamp": "2022-03-04T01:03:27.757Z",
+					"deployedImageName": "img-captain-s2:16",
+					"gitHash": "4d99c79e335ee4e633f04d20fac43c162aa48a34\n"
+				},
+				{
+					"version": 17,
+					"timeStamp": "2022-03-04T01:17:27.139Z",
+					"deployedImageName": "img-captain-s2:17",
+					"gitHash": "19a8f0148d495053c5026b136acc385117f0ce1c\n"
+				},
+				{
+					"version": 18,
+					"timeStamp": "2022-03-04T01:38:45.960Z",
+					"deployedImageName": "img-captain-s2:18",
+					"gitHash": "c9677fd12d366c37e158577a0e7aab9aad8c4ad2\n"
+				},
+				{
+					"version": 19,
+					"timeStamp": "2022-03-04T01:43:08.598Z",
+					"deployedImageName": "img-captain-s2:19",
+					"gitHash": "c5852d0e61e4fb035f56472a10402a96c029873d\n"
+				},
+				{
+					"version": 20,
+					"timeStamp": "2022-03-04T01:46:57.859Z",
+					"deployedImageName": "img-captain-s2:20",
+					"gitHash": "c5852d0e61e4fb035f56472a10402a96c029873d\n"
+				},
+				{
+					"version": 21,
+					"timeStamp": "2022-03-04T02:01:51.572Z",
+					"deployedImageName": "img-captain-s2:21",
+					"gitHash": "0ae22be380b7fea3e06bbe65cfd55d70709fe620\n"
+				},
+				{
+					"version": 22,
+					"timeStamp": "2022-03-04T02:06:27.593Z",
+					"deployedImageName": "img-captain-s2:22",
+					"gitHash": "a1e9db7d2879e6b0d5f1d9afefaafdd069ea7c23\n"
+				},
+				{
+					"version": 23,
+					"timeStamp": "2022-03-04T02:29:41.429Z",
+					"deployedImageName": "img-captain-s2:23",
+					"gitHash": "b50e4d0a87d97915ff7b9c8b4064de0c6f23df86\n"
+				},
+				{
+					"version": 24,
+					"timeStamp": "2022-03-04T02:40:50.129Z",
+					"deployedImageName": "img-captain-s2:24",
+					"gitHash": "1bb939d2d8269610af612aaec10b3900cdd24f44\n"
+				},
+				{
+					"version": 25,
+					"timeStamp": "2022-03-04T07:41:18.369Z",
+					"deployedImageName": "img-captain-s2:25",
+					"gitHash": "87fe4e5ff56b855701e19f27d121517287fa1504\n"
+				},
+				{
+					"version": 26,
+					"timeStamp": "2022-03-04T07:43:37.345Z",
+					"deployedImageName": "img-captain-s2:26",
+					"gitHash": "87fe4e5ff56b855701e19f27d121517287fa1504\n"
+				},
+				{
+					"version": 27,
+					"timeStamp": "2022-03-18T02:10:38.945Z",
+					"deployedImageName": "img-captain-s2:27",
+					"gitHash": "87fe4e5ff56b855701e19f27d121517287fa1504\n"
+				},
+				{
+					"version": 28,
+					"timeStamp": "2022-10-07T08:46:51.055Z",
+					"deployedImageName": "img-captain-s2:28",
+					"gitHash": "87fe4e5ff56b855701e19f27d121517287fa1504\n"
+				},
+				{
+					"version": 29,
+					"timeStamp": "2022-10-07T09:14:17.829Z",
+					"deployedImageName": "img-captain-s2:29",
+					"gitHash": "87fe4e5ff56b855701e19f27d121517287fa1504\n"
+				},
+				{
+					"version": 30,
+					"timeStamp": "2022-10-10T04:16:38.431Z",
+					"deployedImageName": "img-captain-s2:30",
+					"gitHash": "87fe4e5ff56b855701e19f27d121517287fa1504\n"
+				},
+				{
+					"version": 31,
+					"timeStamp": "2022-10-10T04:18:12.440Z",
+					"deployedImageName": "img-captain-s2:31",
+					"gitHash": "87fe4e5ff56b855701e19f27d121517287fa1504\n"
+				},
+				{
+					"version": 32,
+					"timeStamp": "2022-10-10T04:22:52.220Z",
+					"deployedImageName": "img-captain-s2:32",
+					"gitHash": "6ab125f206d6b7041075a4888ff4dee91e1c738f\n"
+				},
+				{
+					"version": 33,
+					"timeStamp": "2022-10-14T01:55:52.213Z",
+					"deployedImageName": "img-captain-s2:33",
+					"gitHash": "6ab125f206d6b7041075a4888ff4dee91e1c738f\n"
+				},
+				{
+					"version": 34,
+					"timeStamp": "2022-12-02T05:48:29.811Z",
+					"deployedImageName": "img-captain-s2:34",
+					"gitHash": "6ab125f206d6b7041075a4888ff4dee91e1c738f\n"
+				},
+				{
+					"version": 35,
+					"timeStamp": "2022-12-26T02:48:10.469Z",
+					"deployedImageName": "img-captain-s2:35",
+					"gitHash": "1f7ba60101a9b590d67142af4b980b675ab77391\n"
+				},
+				{
+					"version": 36,
+					"timeStamp": "2022-12-29T14:21:39.108Z",
+					"deployedImageName": "img-captain-s2:36",
+					"gitHash": "1f7ba60101a9b590d67142af4b980b675ab77391\n"
+				},
+				{
+					"version": 37,
+					"timeStamp": "2025-02-10T08:10:45.633Z"
+				},
+				{
+					"version": 38,
+					"timeStamp": "2025-02-10T08:19:30.685Z"
+				},
+				{
+					"version": 39,
+					"timeStamp": "2025-02-10T08:28:16.295Z",
+					"deployedImageName": "img-captain-s2:39",
+					"gitHash": "159b3d0a2d7f47669f6c14c52eba8429f0377ec3\n"
+				}
+			],
+			"deployedVersion": 39,
+			"notExposeAsWebApp": false,
+			"customDomain": [
+				{
+					"publicDomain": "s2.moc.gov.kh",
+					"hasSsl": true
+				}
+			],
+			"hasDefaultSubDomainSsl": false,
+			"forceSsl": true,
+			"websocketSupport": false,
+			"containerHttpPort": 8000,
+			"nodeId": "thg994nl8g7y270kcsfnx0s2n",
+			"preDeployFunction": "",
+			"serviceUpdateOverride": "",
+			"appDeployTokenConfig": {
+				"enabled": true,
+				"appDeployToken": "054e2deb524685d4dcc94caed0558de7d42fddf945dcc88e8739e6393f7ee2b5"
+			},
+			"appPushWebhook": {
+				"tokenVersion": "66be5c95-244d-475d-9725-816653afd2b4",
+				"pushWebhookToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InRva2VuVmVyc2lvbiI6IjY2YmU1Yzk1LTI0NGQtNDc1ZC05NzI1LTgxNjY1M2FmZDJiNCIsImFwcE5hbWUiOiJzMiIsIm5hbWVzcGFjZSI6ImNhcHRhaW4ifSwiaWF0IjoxNjQ1MDAxMzI0fQ.X3qTpQCMhXxjWVlLGcyEw1rPwiHm3nTug-3Re36i-bw",
+				"repoInfo": {
+					"repo": "http://git.moc.gov.kh/sambath.udomreachea/file-storage.git",
+					"user": "sambath.udomreachea",
+					"password": "",
+					"sshKey": "",
+					"branch": "develop",
+					"passwordEncrypted": "e5b9a71bdde0ca72cf70383190a06756:655077630597d939545d8dd6892be1f21c6d88ee2e23222c505e"
+				}
+			}
+		}
+	},
+	"emailAddress": "it.support@moc.gov.kh",
+	"hasRootSsl": true,
+	"forceRootSsl": true,
+	"hashedPassword": "$2a$10$tXVHsTRwCtpVgUpSX7fvGOlxKdN/WIKJpvdcRiLcFvSFzbaIUphPC"
+}

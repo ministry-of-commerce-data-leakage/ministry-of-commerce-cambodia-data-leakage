@@ -1,0 +1,325 @@
+{
+	"namespace": "captain",
+	"pro": {
+		"installationId": "620aa5b0-cf46-41fd-9ed0-1f256b7ad2c0"
+	},
+	"featureFlags": {
+		"isProEnabled": true
+	},
+	"skipVerifyingDomains": true,
+	"customDomain": "sas-production.moc.gov.kh",
+	"emailAddress": "sambath.udomreachea@moc.gov.kh",
+	"hasRootSsl": true,
+	"forceRootSsl": false,
+	"appDefinitions": {
+		"sas-graphql-test": {
+			"hasPersistentData": false,
+			"description": "",
+			"instanceCount": 1,
+			"captainDefinitionRelativeFilePath": "./captain-definition",
+			"networks": [
+				"captain-overlay-network"
+			],
+			"envVars": [
+				{
+					"key": "NODE_ENV",
+					"value": "development"
+				},
+				{
+					"key": "PORT",
+					"value": "8080"
+				},
+				{
+					"key": "MYSQL_DEFAULT",
+					"value": "mysql2://root:AYdGLHF5RA64y6WC99KYcAezu5aN2w9xtMEAhTccDSizufrMILq@10.88.8.54/sas-development"
+				},
+				{
+					"key": "ALGO",
+					"value": "HS256"
+				},
+				{
+					"key": "SECRET_KEY",
+					"value": "secret"
+				},
+				{
+					"key": "ORIGIN",
+					"value": "*"
+				},
+				{
+					"key": "MYSQL_MOC",
+					"value": "mysql2://root:He@rtweddingdressrakedbmigrateResetYarnSt@rt@10.88.8.54/moc-production-clone"
+				}
+			],
+			"volumes": [],
+			"ports": [],
+			"tags": [],
+			"versions": [
+				{
+					"version": 0,
+					"timeStamp": "2024-09-25T07:51:01.348Z",
+					"deployedImageName": "img-captain-sas-graphql-test:0",
+					"gitHash": ""
+				},
+				{
+					"version": 1,
+					"timeStamp": "2024-09-25T07:52:03.437Z",
+					"deployedImageName": "img-captain-sas-graphql-test:1",
+					"gitHash": "aff33470adb62629539582b80b6c697629489ece\n"
+				},
+				{
+					"version": 2,
+					"timeStamp": "2024-10-21T02:02:39.744Z",
+					"deployedImageName": "img-captain-sas-graphql-test:2",
+					"gitHash": "aff33470adb62629539582b80b6c697629489ece\n"
+				}
+			],
+			"deployedVersion": 2,
+			"notExposeAsWebApp": false,
+			"customDomain": [
+				{
+					"publicDomain": "sas-graphql-test.moc.gov.kh",
+					"hasSsl": true
+				}
+			],
+			"hasDefaultSubDomainSsl": false,
+			"redirectDomain": "",
+			"forceSsl": false,
+			"websocketSupport": false,
+			"containerHttpPort": 8080,
+			"preDeployFunction": "",
+			"serviceUpdateOverride": "",
+			"appDeployTokenConfig": {
+				"enabled": false
+			},
+			"appPushWebhook": {
+				"tokenVersion": "549a1b9e-5dc1-439e-9dd0-e3ac1e83c24a",
+				"pushWebhookToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InRva2VuVmVyc2lvbiI6IjU0OWExYjllLTVkYzEtNDM5ZS05ZGQwLWUzYWMxZTgzYzI0YSIsImFwcE5hbWUiOiJzYXMtZ3JhcGhxbC10ZXN0IiwibmFtZXNwYWNlIjoiY2FwdGFpbiJ9LCJpYXQiOjE3MjcyNTA3MTh9.3oZ-v7YGDFY8ObGm4D4_RiSfyAd0UdyzyX5HVTij3bo",
+				"repoInfo": {
+					"repo": "http://172.20.17.5:3000/sambath.udomreachea/sas-graphql",
+					"user": "sambath.udomreachea",
+					"password": "",
+					"sshKey": "",
+					"branch": "uat",
+					"passwordEncrypted": "ff4913eb682cef08fe104898afce9d46:e60f9d74f807f3345b45824acae0d3e6638a387fed59f1f25bfb"
+				}
+			}
+		},
+		"sas-graphql": {
+			"hasPersistentData": false,
+			"description": "",
+			"instanceCount": 1,
+			"captainDefinitionRelativeFilePath": "./captain-definition",
+			"networks": [
+				"captain-overlay-network"
+			],
+			"envVars": [
+				{
+					"key": "NODE_ENV",
+					"value": "production"
+				},
+				{
+					"key": "PORT",
+					"value": "8080"
+				},
+				{
+					"key": "MYSQL_DEFAULT",
+					"value": "mysql2://root:AYdGLHF5RA64y6WC99KYcAezu5aN2w9xtMEAhTccDSizufrMILq@10.88.8.54/moc-production-clone"
+				},
+				{
+					"key": "ALGO",
+					"value": "HS256"
+				},
+				{
+					"key": "SECRET_KEY",
+					"value": "secret"
+				},
+				{
+					"key": "ORIGIN",
+					"value": "*"
+				},
+				{
+					"key": "MYSQL_MOC",
+					"value": "mysql2://root:d0Y@uthInkBTCisBuLLishIn2025SASDB1@172.20.17.22/moc-production-clone"
+				}
+			],
+			"volumes": [],
+			"ports": [],
+			"tags": [],
+			"versions": [
+				{
+					"version": 0,
+					"timeStamp": "2024-09-25T07:52:51.031Z",
+					"deployedImageName": "img-captain-sas-graphql:0",
+					"gitHash": ""
+				},
+				{
+					"version": 1,
+					"timeStamp": "2024-09-25T07:53:50.327Z",
+					"deployedImageName": "img-captain-sas-graphql:1",
+					"gitHash": "c966dd48530a45ef487918522aa743112f6d45ff\n"
+				},
+				{
+					"version": 2,
+					"timeStamp": "2024-09-25T09:16:24.728Z",
+					"deployedImageName": "img-captain-sas-graphql:2",
+					"gitHash": "c38c768d0dbaff4adcf2941dfe2bedfcc6bd019d\n"
+				},
+				{
+					"version": 3,
+					"timeStamp": "2024-10-07T12:13:53.865Z",
+					"deployedImageName": "img-captain-sas-graphql:3",
+					"gitHash": "c38c768d0dbaff4adcf2941dfe2bedfcc6bd019d\n"
+				},
+				{
+					"version": 4,
+					"timeStamp": "2024-10-07T12:16:57.354Z",
+					"deployedImageName": "img-captain-sas-graphql:4",
+					"gitHash": "c38c768d0dbaff4adcf2941dfe2bedfcc6bd019d\n"
+				},
+				{
+					"version": 5,
+					"timeStamp": "2024-10-14T03:06:10.959Z",
+					"deployedImageName": "img-captain-sas-graphql:5",
+					"gitHash": "c38c768d0dbaff4adcf2941dfe2bedfcc6bd019d\n"
+				},
+				{
+					"version": 6,
+					"timeStamp": "2024-11-08T08:44:36.543Z",
+					"deployedImageName": "img-captain-sas-graphql:6",
+					"gitHash": "8b3406905d98aba30094167ede139b3e757234bd\n"
+				}
+			],
+			"deployedVersion": 6,
+			"notExposeAsWebApp": false,
+			"customDomain": [
+				{
+					"publicDomain": "sas-graphql.moc.gov.kh",
+					"hasSsl": true
+				}
+			],
+			"hasDefaultSubDomainSsl": false,
+			"redirectDomain": "",
+			"forceSsl": false,
+			"websocketSupport": false,
+			"containerHttpPort": 8080,
+			"preDeployFunction": "",
+			"serviceUpdateOverride": "",
+			"appDeployTokenConfig": {
+				"enabled": false
+			},
+			"appPushWebhook": {
+				"tokenVersion": "6239b0a3-5af5-45f1-874c-9bd9aabc556e",
+				"pushWebhookToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InRva2VuVmVyc2lvbiI6IjYyMzliMGEzLTVhZjUtNDVmMS04NzRjLTliZDlhYWJjNTU2ZSIsImFwcE5hbWUiOiJzYXMtZ3JhcGhxbCIsIm5hbWVzcGFjZSI6ImNhcHRhaW4ifSwiaWF0IjoxNzI3MjUwODI1fQ.ava4kcZookIfEnvIW3hj61aD_CnkXXIZp2NJWRdHtZw",
+				"repoInfo": {
+					"repo": "http://172.20.17.5:3000/sambath.udomreachea/sas-graphql",
+					"user": "sambath.udomreachea",
+					"password": "",
+					"sshKey": "",
+					"branch": "hot-fix",
+					"passwordEncrypted": "a63d548a47f9f0dc73ddb7c2ec81b084:84d89ce66d42ac8f8314849e517232f67d9a5825bd91ec6ba3c5"
+				}
+			}
+		},
+		"sas": {
+			"hasPersistentData": false,
+			"description": "",
+			"instanceCount": 1,
+			"captainDefinitionRelativeFilePath": "./captain-definition",
+			"networks": [
+				"captain-overlay-network"
+			],
+			"envVars": [
+				{
+					"key": "NEXT_PUBLIC_API_URL",
+					"value": "https://sas-graphql.moc.gov.kh/graphql"
+				},
+				{
+					"key": "NEXT_PUBLIC_SECRET_KEY",
+					"value": "secret"
+				},
+				{
+					"key": "NEXT_PUBLIC_AAS_API_URL",
+					"value": "https://aas-api.moc.gov.kh/graphql"
+				},
+				{
+					"key": "NEXT_PUBLIC_AAS_OFFICERS_URL",
+					"value": "https://aas-officers.moc.gov.kh"
+				},
+				{
+					"key": "NEXT_PUBLIC_APPLICATION_ID",
+					"value": "1"
+				}
+			],
+			"volumes": [],
+			"ports": [],
+			"tags": [],
+			"versions": [
+				{
+					"version": 0,
+					"timeStamp": "2024-09-25T07:54:26.113Z",
+					"deployedImageName": "img-captain-sas:0",
+					"gitHash": ""
+				},
+				{
+					"version": 1,
+					"timeStamp": "2024-09-25T07:55:40.369Z",
+					"deployedImageName": "img-captain-sas:1",
+					"gitHash": "78ee61155f98cf19569cf884a37bbc7f7b4d98b8\n"
+				},
+				{
+					"version": 2,
+					"timeStamp": "2024-10-17T04:37:28.023Z",
+					"deployedImageName": "img-captain-sas:2",
+					"gitHash": "ee7cd834c9b5e4d42dccdb71824485d188a4dd9b\n"
+				},
+				{
+					"version": 3,
+					"timeStamp": "2024-10-22T02:37:42.239Z",
+					"deployedImageName": "img-captain-sas:3",
+					"gitHash": "f886f8aa77e572ab5075677d2a0273c0a7673a4e\n"
+				},
+				{
+					"version": 4,
+					"timeStamp": "2024-12-04T08:38:46.736Z",
+					"deployedImageName": "img-captain-sas:4",
+					"gitHash": "73862f9b12ec2bbdca24d82445e0ba77778cebc1\n"
+				}
+			],
+			"deployedVersion": 4,
+			"notExposeAsWebApp": false,
+			"customDomain": [
+				{
+					"publicDomain": "sas-test.moc.gov.kh",
+					"hasSsl": true
+				},
+				{
+					"publicDomain": "sas.moc.gov.kh",
+					"hasSsl": true
+				}
+			],
+			"hasDefaultSubDomainSsl": false,
+			"redirectDomain": "",
+			"forceSsl": false,
+			"websocketSupport": false,
+			"containerHttpPort": 3000,
+			"preDeployFunction": "",
+			"serviceUpdateOverride": "",
+			"appDeployTokenConfig": {
+				"enabled": false
+			},
+			"appPushWebhook": {
+				"tokenVersion": "ba8511a8-d191-46f8-8a80-49ca6543c9b2",
+				"pushWebhookToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InRva2VuVmVyc2lvbiI6ImJhODUxMWE4LWQxOTEtNDZmOC04YTgwLTQ5Y2E2NTQzYzliMiIsImFwcE5hbWUiOiJzYXMiLCJuYW1lc3BhY2UiOiJjYXB0YWluIn0sImlhdCI6MTcyNzI1MDkzNn0.Q7yVjNqE3tqRijetXAYjv9UjWRMJEEIn0Uas_bMSwk8",
+				"repoInfo": {
+					"repo": "http://172.20.17.5:3000/sambath.udomreachea/sas",
+					"user": "sambath.udomreachea",
+					"password": "",
+					"sshKey": "",
+					"branch": "main",
+					"passwordEncrypted": "b4ca45871ca139aff5145d2f9087e4f4:9a7f441a3a5ecb09de5718af8b5d0913e58c256588aae15f1c2c"
+				}
+			}
+		}
+	},
+	"hashedPassword": "$2a$10$IZW1uQnGLdUCryriGJsTd.YAkeu4UYPzOF/foqqIv8sab5WgWnKje"
+}
