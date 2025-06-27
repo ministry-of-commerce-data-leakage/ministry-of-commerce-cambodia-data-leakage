@@ -1,2 +1,8 @@
-# Thai Anominaty
-# Weak Cambodia Ministry Of Commerce Developers Infrastructure 555555555
+> BlackEye | Thai Cyber Attack
+
+
+## 📡 JOIN US
+
+- 🌐 [Telegram](https://t.me/blackeye_thaisec)
+
+
